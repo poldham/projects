@@ -18,7 +18,7 @@ Commands are only re-run if their inputs have changed.
 
 | Command | Description |
 | --- | --- |
-| `install` | Install dependencies and log in to Weights & Biases |
+| `login` | Log in to Weights & Biases |
 | `data` | Extract the gold-standard annotations |
 | `train` | Train a model using the default config |
 | `train-search` | Run customized training runs for hyperparameter search using [Weights & Biases Sweeps](https://docs.wandb.ai/guides/sweeps) |

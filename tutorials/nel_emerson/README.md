@@ -25,7 +25,6 @@ Commands are only re-run if their inputs have changed.
 | `corpus` | Create a training and dev set from the manually annotated data |
 | `train` | Train a new Entity Linking component |
 | `evaluate` | Final evaluation on the dev data and printing the results |
-| `setup` | Install dependencies |
 | `clean` | Remove intermediate files |
 
 ### ⏭ Workflows
@@ -37,7 +36,7 @@ inputs have changed.
 
 | Workflow | Steps |
 | --- | --- |
-| `all` | `setup` &rarr; `download` &rarr; `kb` &rarr; `corpus` &rarr; `train` &rarr; `evaluate` |
+| `all` | `download` &rarr; `kb` &rarr; `corpus` &rarr; `train` &rarr; `evaluate` |
 | `training` | `kb` &rarr; `corpus` &rarr; `train` &rarr; `evaluate` |
 
 ### 🗂 Assets
@@ -67,7 +66,7 @@ full name. These sentences are then annotated with Prodigy by executing the
 command
 
 ```bash
-prodigy entity_linker.manual emersons_annotated emerson_input_text.txt my_nlp/ my_kb entitites.csv -F el_recipe.py
+prodigy entity_linker.manual emersons_annotated assets/emerson_input_text.txt temp/my_nlp/ temp/my_kb assets/entities.csv -F scripts/el_recipe.py
 ```
 
 The final results are stored to file with

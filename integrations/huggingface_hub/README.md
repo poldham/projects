@@ -25,7 +25,7 @@ Commands are only re-run if their inputs have changed.
 
 | Command | Description |
 | --- | --- |
-| `install` | Install dependencies, log in to Hugging Face and download a model |
+| `login` | Log in to Hugging Face and download a model |
 | `preprocess` | Convert the data to spaCy's binary format |
 | `train` | Train a named entity recognition model |
 | `evaluate` | Evaluate the model and export metrics |
